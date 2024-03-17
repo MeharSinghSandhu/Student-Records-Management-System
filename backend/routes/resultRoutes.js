@@ -1,10 +1,9 @@
 import express from 'express';
+import resultController from '../controllers/resultController.js';
 
 const router = express.Router();
 
-import resultController from '../controllers/resultController.js';
-
-
+console.log('routing results');
 
 // GET all results
 router.get('/', resultController.getAllResults);

@@ -3,7 +3,7 @@ import courseController from '../controllers/courseController.js';
 
 const router = express.Router();
 
-
+console.log('routing courses');
 // GET all courses
 router.get('/', courseController.getAllCourses);
 

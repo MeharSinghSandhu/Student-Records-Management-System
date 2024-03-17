@@ -22,13 +22,21 @@ export const getResultById = async (req, res) => {
     res.status(500).json({ message: 'Error fetching result', error: err.message });
   }
 };
-
+// export const createCourse = async (req, res) => {
+//   try {
+//     const course = await Course.create(req.body);
+//     res.status(201).json(course);
+//   } catch (err) {
+//     res.status(500).json({ error: err.message });
+//   }
+// };
 export const createResult = async (req, res) => {
   try {
-    const { course_id, course_name, student_id, student_name, score } = req.body;
-    const newResult = await Result.create({ course_id, course_name, student_id, student_name, score });
+    // const { course_id, course_name, student_id, student_name, score } = req.body;
+    const newResult = await Result.create(req.body);
     res.status(201).json(newResult);
   } catch (err) {
+    console.log("caught you");
     res.status(500).json({ message: 'Error creating result', error: err.message });
   }
 };
