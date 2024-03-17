@@ -1,0 +1,86 @@
+/* results.css */
+
+/* General page layout */
+.page-layout {
+    display: flex;
+    padding: 20px;
+    gap: 40px; /* Adjust the gap between the two columns */
+  }
+  
+  /* Styling the form container to take up half the page and center its contents */
+  .form-container {
+    margin-top: 30px;
+    flex-basis: 50%; /* Takes up half the width of the parent */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the form elements */
+  }
+  
+  .form-container h1 {
+    font-size: 30px;
+  }
+  
+  /* Styling the results list container to also take up half the page */
+  .list-container {
+    margin-top: 30px;
+    flex-basis: 50%; /* Takes up half the width of the parent */
+  }
+  
+  /* Styling the form itself, ensuring it does not stretch too wide */
+  .form-container form {
+    width: 100%;
+    max-width: 400px; /* Set a max-width for larger screens */
+  }
+  
+  /* Styling for each input and button in the form */
+  .form-container input,
+  .form-container button {
+    width: 100%; /* Input and button should fill the form */
+    margin-bottom: 15px; /* Increased space between form items */
+    border: 2px solid #bae8e8; /* Tertiary color for border */
+    border-radius: 4px;
+    padding: 10px; /* Increased padding for better visuals */
+  }
+  
+  /* Styling for the form's button */
+  .form-container button {
+    background-color: #ffd803; /* Highlight color for button background */
+    color: #272343; /* Text color for button */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .form-container button:hover {
+    background-color: #bae8e8; /* Tertiary color for button hover background */
+    color: #272343; /* Text color for button hover */
+  }
+  
+  /* Styling for the results table */
+  .list-container table {
+    width: 100%; /* Full width of its container */
+    border-collapse: collapse; /* Collapse borders for a clean look */
+  }
+  
+  .list-container th,
+  .list-container td {
+    border: 1px solid #ddd; /* Light grey border */
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .list-container th {
+    background-color: #f2f2f2; /* Light grey background for table headers */
+    color: #272343; /* Text color for headers */
+  }
+  
+  .list-container tr:nth-child(even) {
+    background-color: #f9f9f9; /* Stripe effect for rows */
+  }
+  
+  .list-container tr:hover {
+    background-color: #e3f6f5; /* Highlight effect on hover */
+  }
+  

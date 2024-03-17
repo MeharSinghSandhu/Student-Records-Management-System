@@ -1,0 +1,93 @@
+.students-page-layout {
+    display: flex;
+    padding: 20px;
+    gap: 40px; /* Adjust the gap between the two columns */
+  }
+  
+  /* Styling the form container to take up half the page and center its contents */
+  .form-container {
+    margin-top: 30px;
+    margin-left: 130px;
+    flex-basis: 50%; /* Takes up half the width of the parent */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the form elements */
+    padding: 0;
+  }
+
+  .form-container h1{
+    font-size: 30px;
+  }
+  
+  /* Styling the students list container to also take up half the page */
+  .students-list-container {
+    margin-left: 100px;
+    margin-top: 30px;
+    flex-basis: 50%; /* Takes up half the width of the parent */
+    padding: 0;
+  }
+  
+  
+  /* Styling the form itself, ensuring it does not stretch too wide */
+  .form-container form {
+    width: 100%;
+    max-width: 400px; /* Set a max-width for larger screens */
+  }
+  
+  /* Styling for each input and button in the form */
+  .form-container input,
+  .form-container button {
+    width: 100%; /* Input and button should fill the form */
+    margin-bottom: 15px; /* Increased space between form items */
+    border: 2px solid #bae8e8; /* Tertiary color for border */
+    border-radius: 4px;
+    padding: 10px; /* Increased padding for better visuals */
+  }
+  
+  /* Styling for the form's button */
+  .form-container button {
+    background-color: #ffd803; /* Highlight color for button background */
+    color: #272343; /* Text color for button */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .form-container button:hover {
+    background-color: #bae8e8; /* Tertiary color for button hover background */
+    color: #272343; /* Text color for button hover */
+  }
+  
+  /* Heading styles */
+  .heading {
+    margin-top: 30px;
+    margin-bottom: 50px; /* Adjusted for better visual spacing */
+  }
+  
+  /* Styles for the list of students */
+  .students-list-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .students-list-container li {
+    background-color: #e3f6f5; /* Secondary color for list item background */
+    color: #272343; /* Text color for list items */
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+  }
+  
+  /* Ensure the h1, h2, and other elements inside .page-container inherit the correct color and margins */
+  .page-container h1,
+  .page-container h2 {
+    color: #272343; /* Text color for headings */
+    text-align: center; /* Center-align headings */
+  }
+  
+  .page-container h2 {
+    margin-bottom: 20px; /* Increased margin for better spacing */
+  }
+  

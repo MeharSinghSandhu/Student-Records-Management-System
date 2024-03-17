@@ -1,0 +1,98 @@
+/* home.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Ensure sidebar and content are side by side */
+    min-height: 100vh;
+    background-color: #fffffe; /* Main background */
+}
+
+.sidebar {
+    width: 250px; /* Fixed sidebar width */
+    background-color: #e3f6f5; /* Secondary */
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Reset default margin */
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #272343; /* Text */
+    padding: 10px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-link.active, .nav-link:hover {
+    background-color: #bae8e8; /* Tertiary */
+    color: #272343; /* Highlight */
+}
+
+.main-content {
+    flex-grow: 1; /* Ensure it takes the remaining space */
+    padding-left: 276px;
+    padding-top: 30px;
+    background-color: #fffffe; /* Main */
+    color: #272343; /* Text */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+.header_area {
+    text-align: center;
+    width: 100%; /* Ensure full width */
+    padding: 20px 0;
+    background-color: #e3f6f5; /* Secondary */
+}
+
+.main-header {
+    color: #272343; /* Text */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.app-description {
+    margin-top: 100px;
+    color: #272343; /* Text */
+    line-height: 2.0;
+    font-size: large;
+    text-align: center;
+    padding: 0 20px; /* Add padding for text */
+}
+
+.buttons-container {
+    text-align: center;
+    padding: 100px 0;
+    display: flex;
+    gap: 1rem; /* Space between buttons */
+    justify-content: center; /* Center buttons horizontally */
+}
+
+.button-link {
+    text-decoration: none;
+    background-color: #ffd803; /* Highlight */
+    color: #272343; /* Text */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-link:hover {
+    background-color: #bae8e8; /* Tertiary */
+    color: #272343; /* Text */
+}

@@ -1,0 +1,96 @@
+/* courses.css */
+
+/* General page container */
+.page-container {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column; /* Stack the heading and form vertically */
+    align-items: center; 
+    /* width: 100%; */
+  }
+  
+  /* Container for both form and list */
+  .courses-content {
+    display: flex;
+    flex-direction: row; /* Place children side by side */
+    justify-content: space-between; /* Distribute space between children */
+    gap: 40px; /* Space between form and list */
+     /* Use full available width */
+    margin-top: 30px; /* Space below the main heading */
+  }
+  
+  /* Styling for form container */
+  .form-container {
+    flex-basis: 40%; /* Form takes up less space than the list */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Styling for list container */
+  .list-container {
+    margin-top: 20px;
+    margin-left: 130px;
+    flex-basis: 60%; /* List takes up more space than the form */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Heading styles */
+  .page-container h1, .list-container h2 {
+    color: #272343; /* Text color */
+    text-align: center; /* Center-align the heading */
+    font-size: 30px; /* Larger font size */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  /* Form label and input styles */
+  .form-container label, 
+  .form-container input, 
+  .form-container button {
+    display: block; /* Ensure label, input, and button are block level for full width */
+    width: 100%; /* Input and button should fill the form */
+  }
+  
+  /* Input styles */
+  .form-container input {
+    border: 2px solid #bae8e8; /* Tertiary color for border */
+    border-radius: 4px;
+    /* padding: 8px;
+    margin-bottom: 10px;  */
+  }
+  
+  /* Button styles */
+  .form-container button {
+    background-color: #ffd803; /* Highlight color for button background */
+    color: #272343; /* Text color for button */
+    padding: 10px 15px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .form-container button:hover {
+    background-color: #bae8e8; /* Tertiary color for button hover background */
+    color: #272343; /* Text color for button hover */
+  }
+  
+  /* List item styles */
+  .list-container ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+  }
+  
+  .list-container li {
+    background-color: #e3f6f5; /* Secondary color for list item background */
+    color: #272343; /* Text color for list items */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 5px; /* Space between list items */
+    transition: background-color 0.3s;
+  }
+  
+  .list-container li:hover {
+    background-color: #bae8e8; /* Tertiary color for list item hover background */
+  }
+  
